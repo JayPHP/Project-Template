@@ -1,0 +1,25 @@
+{
+    "name": "Mitie Support Desk",
+    "description": "Support desk with email listener integration",
+    "authors": [
+        {
+            "name": "James Byrne",
+            "email": "jamesbwebdev@gmail.com",
+            "role": "Lead Administrator - Web Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "filp/whoops": ">=2.1.2",
+        "nikic/fast-route": "^1.0",
+        "rdlowrey/auryn": "^1.4",
+        "mustache/mustache": "~2.5",
+        "symfony/http-foundation": "^3.1",
+        "twig/twig": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jbyrne\\": "src/"
+        }
+    }
+}
