@@ -1,0 +1,11 @@
+development:
+  host: localhost
+  database: database_name
+  username: root
+  password: password
+
+production:
+  host: 000.000.00.00
+  database: database_name
+  username: root
+  password: password
