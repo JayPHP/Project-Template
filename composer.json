@@ -14,7 +14,8 @@
         "nikic/fast-route": "^1.0",
         "rdlowrey/auryn": "^1.4",
         "symfony/http-foundation": "^3.1",
-        "twig/twig": "~1.0"
+        "twig/twig": "~1.0",
+        "symfony/yaml": "^3.1"
     },
     "autoload": {
         "psr-4": {

@@ -8,22 +8,22 @@
 namespace Jbyrne\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Jbyrne\Interfaces\Template;
+use Jbyrne\Interfaces\Database;
 
 class Application
 {
     protected $request;
-    protected $response;
     protected $template;
+    protected $db;
 
     public function __construct(
-    	Request $request, 
-    	Response $response,
+        Database $database,
+    	Request $request,
     	Template $template
     ) {
+        $this->db = $database->connection;
         $this->request = $request;
-        $this->response = $response;
         $this->template = $template;
     }
 

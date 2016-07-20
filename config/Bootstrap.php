@@ -11,7 +11,9 @@ namespace Jbyrne;
 require __DIR__ . '/../vendor/autoload.php';
 
 error_reporting(E_ALL);
+
 $environment = 'development';
+define('ENV', $environment);
 
 /**
  * Whoops for error handling. More information + documentation
