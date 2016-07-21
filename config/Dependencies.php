@@ -38,6 +38,12 @@ $injector->define('Symfony\Component\HttpFoundation\Request', [
         $_SERVER
     ]);
 
+$injector->define('PDO', [
+        "mysql:host={$config['host']};dbname={$config['database']}",
+        $config['username'],
+        $config['password']
+    ]);
+
 // delegates
 $injector->delegate('Twig_Environment', function() use ($injector) {
     $loader = new Twig_Loader_Filesystem(dirname(__DIR__) . '/src/views');

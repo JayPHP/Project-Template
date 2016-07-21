@@ -13,7 +13,9 @@ require __DIR__ . '/../vendor/autoload.php';
 error_reporting(E_ALL);
 
 $environment = 'development';
-define('ENV', $environment);
+
+use Symfony\Component\Yaml\Yaml;
+$config = Yaml::parse(file_get_contents(__DIR__.'/database.yml'))[$environment];
 
 /**
  * Whoops for error handling. More information + documentation

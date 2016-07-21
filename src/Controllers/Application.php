@@ -22,7 +22,7 @@ class Application
     	Request $request,
     	Template $template
     ) {
-        $this->db = $database->connection;
+        $this->db = $database->PDO;
         $this->request = $request;
         $this->template = $template;
     }
