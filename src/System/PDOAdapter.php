@@ -11,7 +11,7 @@ use Jbyrne\Interfaces;
 use Symfony\Component\Yaml\Yaml;
 use PDO;
 
-class MySql implements Interfaces\Database
+class PDOAdapter implements Interfaces\Database
 {
     public $PDO;
 

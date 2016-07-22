@@ -15,7 +15,7 @@ $injector = new \Auryn\Injector;
  * instance of second argument.
  */
 $injector->alias('Jbyrne\Interfaces\Template', 'Jbyrne\System\TwigRenderer');
-$injector->alias('Jbyrne\Interfaces\Database', 'Jbyrne\System\MySql');
+$injector->alias('Jbyrne\Interfaces\Database', 'Jbyrne\System\PDOAdapter');
 
 /**
  * Share the same instance across application
@@ -39,7 +39,7 @@ $injector->define('Symfony\Component\HttpFoundation\Request', [
     ]);
 
 $injector->define('PDO', [
-        "mysql:host={$config['host']};dbname={$config['database']}",
+        "mysql:host={$config['host']};dbname={$config['database']};charset{$config['charset']}",
         $config['username'],
         $config['password']
     ]);

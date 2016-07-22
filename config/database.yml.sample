@@ -3,9 +3,11 @@ development:
   database: database_name
   username: root
   password: password
+  charset: utf8
 
 production:
   host: 000.000.00.00
   database: database_name
   username: root
   password: password
+  charset: utf8
