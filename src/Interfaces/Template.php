@@ -5,7 +5,7 @@
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jbyrne\Interfaces;
+namespace Jay\Interfaces;
 
 interface Template
 {

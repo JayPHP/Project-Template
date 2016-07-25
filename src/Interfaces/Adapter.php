@@ -1,13 +1,13 @@
 <?php
 /**
- * Database Interface
+ * Adapter Interface
  *
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jbyrne\Interfaces;
+namespace Jay\Interfaces;
 
-interface Database
+interface Adapter
 {
 
 }

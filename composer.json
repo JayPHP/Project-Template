@@ -1,6 +1,6 @@
 {
-    "name": "Mitie Support Desk",
-    "description": "Support desk with email listener integration",
+    "name": "Jays Project Template/Framework",
+    "description": "Project Template/Framework",
     "authors": [
         {
             "name": "James Byrne",
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jbyrne\\": "src/"
+            "Jay\\": "src/"
         }
     }
 }

@@ -5,7 +5,7 @@
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jbyrne;
+namespace Jay;
 
 // Composer used for autoload
 require __DIR__ . '/../vendor/autoload.php';
@@ -44,7 +44,7 @@ $request = $injector->make('Symfony\Component\HttpFoundation\Request');
 $response = $injector->make('Symfony\Component\HttpFoundation\Response');
 
 // Define Template used in route handling
-$template = $injector->make('Jbyrne\Interfaces\Template');
+$template = $injector->make('Jay\Interfaces\Template');
 
 /**
  * Configure routing. Using FastRoute, https://github.com/nikic/FastRoute. 

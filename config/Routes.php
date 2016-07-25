@@ -6,5 +6,5 @@
  */
 
 return [
-    ['GET', '/', ['Jbyrne\Controllers\Application', 'index']]
+    ['GET', '/', ['Jay\Controllers\Application', 'index']]
 ];

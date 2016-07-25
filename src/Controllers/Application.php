@@ -5,24 +5,21 @@
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jbyrne\Controllers;
+namespace Jay\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
-use Jbyrne\Interfaces\Template;
-use Jbyrne\Interfaces\Database;
+use Jay\Interfaces\Template;
+use Jay\Interfaces\Database;
 
 class Application
 {
     protected $request;
     protected $template;
-    protected $db;
 
     public function __construct(
-        Database $database,
     	Request $request,
     	Template $template
     ) {
-        $this->db = $database->PDO;
         $this->request = $request;
         $this->template = $template;
     }

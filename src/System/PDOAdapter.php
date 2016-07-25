@@ -5,13 +5,12 @@
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jbyrne\System;
+namespace Jay\System;
 
-use Jbyrne\Interfaces;
-use Symfony\Component\Yaml\Yaml;
+use Jay\Interfaces;
 use PDO;
 
-class PDOAdapter implements Interfaces\Database
+class PDOAdapter implements Interfaces\Adapter
 {
     public $PDO;
 

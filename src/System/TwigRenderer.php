@@ -5,9 +5,9 @@
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jbyrne\System;
+namespace Jay\System;
 
-use Jbyrne\Interfaces;
+use Jay\Interfaces;
 use Twig_Environment;
 use Symfony\Component\HttpFoundation\Response;
 
