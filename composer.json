@@ -1,6 +1,7 @@
 {
     "name": "jayphp/project-template",
     "description": "Jays Project Template/Framework",
+    "license": "See the LICENSE file",
     "authors": [
         {
             "name": "James Byrne",
