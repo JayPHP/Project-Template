@@ -14,8 +14,8 @@ $injector = new \Auryn\Injector;
  * Every time the type-hint of 1st argument is found inject an 
  * instance of second argument.
  */
-$injector->alias('Jay\Interfaces\Template', 'Jay\System\TwigRenderer');
-$injector->alias('Jay\Interfaces\Adapter', 'Jay\System\PDOAdapter');
+$injector->alias('Jay\System\Template', 'Jay\System\Template\TwigRenderer');
+$injector->alias('Jay\System\Adapter', 'Jay\System\Database\PDOAdapter');
 
 /**
  * Share the same instance across application

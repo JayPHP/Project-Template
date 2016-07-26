@@ -10,7 +10,7 @@ namespace Jay;
 // Composer used for autoload
 require __DIR__ . '/../vendor/autoload.php';
 
-$environment = 'production';
+$environment = 'development';
 
 use Symfony\Component\Yaml\Yaml;
 $config = Yaml::parse(file_get_contents(__DIR__.'/database.yml'))[$environment];
@@ -42,7 +42,7 @@ $request = $injector->make('Symfony\Component\HttpFoundation\Request');
 $response = $injector->make('Symfony\Component\HttpFoundation\Response');
 
 // Define Template used in route handling
-$template = $injector->make('Jay\Interfaces\Template');
+$template = $injector->make('Jay\System\Template');
 
 /**
  * Configure routing. Using FastRoute, https://github.com/nikic/FastRoute. 

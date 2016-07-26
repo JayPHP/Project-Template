@@ -5,13 +5,13 @@
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jay\System;
+namespace Jay\System\Template;
 
-use Jay\Interfaces;
+use Jay\System\Template;
 use Twig_Environment;
 use Symfony\Component\HttpFoundation\Response;
 
-class TwigRenderer implements Interfaces\Template
+class TwigRenderer implements Template
 {
     private $template;
 

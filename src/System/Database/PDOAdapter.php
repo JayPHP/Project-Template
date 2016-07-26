@@ -5,12 +5,12 @@
  * @author James Byrne <jamesbwebdev@gmail.com>
  */
 
-namespace Jay\System;
+namespace Jay\System\Database;
 
-use Jay\Interfaces;
+use Jay\System\Adapter;
 use PDO;
 
-class PDOAdapter implements Interfaces\Adapter
+class PDOAdapter implements Adapter
 {
     public $PDO;
 

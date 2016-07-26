@@ -8,8 +8,7 @@
 namespace Jay\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
-use Jay\Interfaces\Template;
-use Jay\Interfaces\Database;
+use Jay\System\Template;
 
 class Application
 {
