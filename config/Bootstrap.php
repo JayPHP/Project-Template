@@ -10,9 +10,7 @@ namespace Jay;
 // Composer used for autoload
 require __DIR__ . '/../vendor/autoload.php';
 
-error_reporting(E_ALL);
-
-$environment = 'development';
+$environment = 'production';
 
 use Symfony\Component\Yaml\Yaml;
 $config = Yaml::parse(file_get_contents(__DIR__.'/database.yml'))[$environment];
@@ -27,7 +25,7 @@ if ($environment !== 'production') {
     $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
 } else {
     $whoops->pushHandler(function($e){
-        echo 'Friendly error page and send an email to the developer';
+        echo 'Error';
     });
 }
 
